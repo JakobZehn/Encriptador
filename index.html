@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<header>
+    <nav class="headerMenu">
+        <a class="headerMenuLink" href="index.html"> <img src="img/images__1_-removebg-preview.png" alt="Alura" class="alura" width="58px" height="48px">Inicio </a>
+</nav></header>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <textarea type="textarea" id="TextoUsuario" rows="10" cols="50"  placeholder="Ingrese el texto aquí" class="textoUsuario" ></textarea>
+                <p class="aviso">
+                <img src="img/png-clipart-exclamation-mark-exclamation-mark-removebg-preview.png" alt="Resaltar" class="acompañar" width="16px" height="16px">
+                Solo letras minúsculas y sin acentos</p>
+            <button onclick="Encriptar()" class="letra">Encriptar</button>
+            <button onclick="Desencriptar()" class="letraB">Desencriptar</button>
+        </div>
+        <div class="right-panel">
+            <img src="./img/DSC_2275.jpg" alt="Paisaje" class="img" width="600" height="400">
+            <p1 class="mensaje" id="mensaje">Ningún mensaje fue encontrado</p1>
+            <p2 class="segundoM" id="mensaje">Texto encriptado o desencriptado</p2>
+            <textarea id="campoVisualizacion" placeholder="Texto a copiar" style="display: none;"></textarea>
+            <button id="copiarButton" onclick="copiarTexto()" class="copiar" style="display: none;">Copiar</button>
+        </div>
+        <div class="background-container">
+            <img src="img/OIG2.jpeg" class="background-image" alt="Fondo">
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+<footer class="footer">
+    <p>Desarrollado por German</p>
+    <p>2024</p>
+</footer>
+</html>
